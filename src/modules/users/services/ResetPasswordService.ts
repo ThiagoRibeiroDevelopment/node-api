@@ -27,13 +27,13 @@ class ResetPasswordService {
       throw new AppError('User does not exists.');
     }
 
-    const tokenCreatedAt = userToken.created_at;
-    //somar duas horas como tempo tempo de expiracao
-    const compareDate = addHours(tokenCreatedAt, 2);
+    // const tokenCreatedAt = userToken.created_at;
+    // //somar duas horas como tempo tempo de expiracao
+    // const compareDate = addHours(tokenCreatedAt, 2);
 
-    if (isAfter(Date.now(), compareDate)) {
-      throw new AppError('Token expired.');
-    }
+    // if (isAfter(Date.now(), compareDate)) {
+    //   throw new AppError('Token expired.');
+    // }
 
     user.password = await hash(password, 8);
 
