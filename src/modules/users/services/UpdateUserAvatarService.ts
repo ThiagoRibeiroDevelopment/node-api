@@ -5,7 +5,7 @@ import UsersRepository from '../infra/typeorm/repositories/UsersRepository';
 import uploadConfig from '@config/upload';
 import path from 'path/posix';
 import fs from 'fs';
-import { fstat } from 'fs';
+// import { fstat } from 'fs';
 // import DiskStorageProvider from '@shared/providers/StorageProvider/DiskStorageProvider';
 // import S3StorageProvider from '@shared/providers/StorageProvider/S3StorageProvider';
 
