@@ -1,7 +1,7 @@
 import { inject, injectable } from 'tsyringe';
 import AppError from '@shared/errors/AppError';
-import { ICreateUser } from '../domain/models/ICreateUser';
 import { IUser } from '../domain/models/IUser';
+import { ICreateUser } from '../domain/models/ICreateUser';
 import { IUsersRepository } from '../domain/repositories/IUsersRepository';
 import { IHashProvider } from '../providers/HashProvider/models/IHashPovider';
 
